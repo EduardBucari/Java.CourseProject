@@ -1,25 +1,23 @@
 package edu.javacourse.studentorder.domain;
 
-public class Street {
-    private long streetCode;
+public class Street
+{
+    private Long streetCode;
     private String streetName;
 
-    //constructor without parameters (select none)
     public Street() {
     }
 
-    //constructor
-    public Street(long streetCode, String streetName) {
+    public Street(Long streetCode, String streetName) {
         this.streetCode = streetCode;
         this.streetName = streetName;
     }
 
-    //  getters & setters
-    public long getStreetCode() {
+    public Long getStreetCode() {
         return streetCode;
     }
 
-    public void setStreetCode(long streetCode) {
+    public void setStreetCode(Long streetCode) {
         this.streetCode = streetCode;
     }
 

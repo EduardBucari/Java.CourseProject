@@ -28,9 +28,9 @@ public class CityRegisterValidator
 
         ans.addItem(checkPerson(so.getHusband()));
         ans.addItem(checkPerson(so.getWife()));
-            for (Child child : so.getChildren()) {
-                ans.addItem(checkPerson(child));
-            }
+        for (Child child : so.getChildren()) {
+            ans.addItem(checkPerson(child));
+        }
 
         return ans;
     }
@@ -40,10 +40,10 @@ public class CityRegisterValidator
         AnswerCityRegisterItem.CityError error = null;
 
         try {
-          CityRegisterResponse tmp = personChecker.checkPerson(person);
-         status = tmp.isExisting() ?
-                 AnswerCityRegisterItem.CityStatus.YES :
-                 AnswerCityRegisterItem.CityStatus.NO;
+            CityRegisterResponse tmp = personChecker.checkPerson(person);
+            status = tmp.isExisting() ?
+                    AnswerCityRegisterItem.CityStatus.YES :
+                    AnswerCityRegisterItem.CityStatus.NO;
         } catch (CityRegisterException ex) {
             ex.printStackTrace(System.out);
             status = AnswerCityRegisterItem.CityStatus.ERROR;

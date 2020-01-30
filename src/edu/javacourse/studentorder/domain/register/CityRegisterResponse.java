@@ -23,7 +23,7 @@ public class CityRegisterResponse
 
     @Override
     public String toString() {
-        return "CityRegisterCheckerResponse{" +
+        return "CityRegisterResponse{" +
                 "existing=" + existing +
                 ", temporal=" + temporal +
                 '}';

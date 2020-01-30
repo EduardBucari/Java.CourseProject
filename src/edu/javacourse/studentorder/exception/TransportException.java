@@ -1,8 +1,7 @@
 package edu.javacourse.studentorder.exception;
 
-public class TransportException extends Exception {
-    //Constructors
-
+public class TransportException extends Exception
+{
     public TransportException() {
     }
 

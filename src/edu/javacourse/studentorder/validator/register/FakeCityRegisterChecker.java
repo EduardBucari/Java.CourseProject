@@ -45,7 +45,7 @@ public class FakeCityRegisterChecker implements CityRegisterChecker
             }
         }
 
-        if(person instanceof Child) {
+        if (person instanceof Child) {
             res.setExisting(true);
             res.setTemporal(true);
         }

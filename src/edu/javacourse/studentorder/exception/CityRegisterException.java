@@ -1,7 +1,7 @@
 package edu.javacourse.studentorder.exception;
 
-public class CityRegisterException extends Exception {
-
+public class CityRegisterException extends Exception
+{
     private String code;
 
     public CityRegisterException(String code, String message) {
@@ -14,7 +14,6 @@ public class CityRegisterException extends Exception {
         this.code = code;
     }
 
-    //Getter
     public String getCode() {
         return code;
     }

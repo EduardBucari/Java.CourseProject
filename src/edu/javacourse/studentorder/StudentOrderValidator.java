@@ -38,7 +38,7 @@ public class StudentOrderValidator
     public void checkAll() {
         List<StudentOrder> soList = readStudentOrders();
 
-        for(StudentOrder so : soList) {
+        for (StudentOrder so : soList) {
             checkOneOrder(so);
         }
     }
@@ -56,6 +56,7 @@ public class StudentOrderValidator
 
     public void checkOneOrder(StudentOrder so) {
         AnswerCityRegister cityAnswer = checkCityRegister(so);
+
 //        AnswerWedding wedAnswer = checkWedding(so);
 //        AnswerChildren childAnswer = checkChildren(so);
 //        AnswerStudent studentAnswer = checkStudent(so);

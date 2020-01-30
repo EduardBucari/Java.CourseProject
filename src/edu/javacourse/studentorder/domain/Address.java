@@ -27,9 +27,13 @@ public class Address
         this.postCode = postCode;
     }
 
-    public Street getStreet() { return street; }
+    public Street getStreet() {
+        return street;
+    }
 
-    public void setStreet(Street street) { this.street = street; }
+    public void setStreet(Street street) {
+        this.street = street;
+    }
 
     public String getBuilding() {
         return building;
